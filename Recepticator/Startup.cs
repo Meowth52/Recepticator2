@@ -21,6 +21,7 @@ namespace Recepticator
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Database db = new Database();
         }
 
         public IConfiguration Configuration { get; }
